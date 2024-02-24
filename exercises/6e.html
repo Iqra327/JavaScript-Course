@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+
+
+    <script>
+      let age = 21;
+      let parkDiscount = '';
+      let isHoliday = true;
+      if((age <=6 || age >=65) && !isHoliday){
+        parkDiscount = 'Discount'
+      }else {
+        parkDiscount = 'No discount'
+      }
+      console.log(parkDiscount);
+
+      age = 5;
+      parkDiscount = '';
+      isHoliday = false;
+      if((age <=6 || age >=65 ) && !isHoliday){
+        parkDiscount = 'Discount';
+      }else {
+        parkDiscount = 'No discount';
+      }
+      console.log(parkDiscount);
+    </script>
+  </body>
+</html>
