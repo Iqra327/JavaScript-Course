@@ -77,6 +77,8 @@
         // Only use eval() for learning purposes.
         calculation = eval(calculation);
         console.log(calculation);
+
+        localStorage.setItem('save', calculation);
       ">=</button>
 
       <button onclick="
@@ -88,16 +90,20 @@
       <button onclick="
         calculation = '';
         console.log(calculation);
+
+        localStorage.setItem('save', calculation);
       ">Clear</button>
     </p>
 
     <script>
-      let calculation = '';
+      let calculation = localStorage.getItem('calculation') || '';
 
       function updateCalculation(value) {
         calculation += value;
         console.log(calculation);
+        localStorage.setItem('save', calculation);
       }
+      
     </script>
   </body>
 </html>
