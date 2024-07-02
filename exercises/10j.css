@@ -1,0 +1,27 @@
+body{
+  background-color: black;
+  font-family: Arial;
+}
+.button-style , .button-operators-style , .button-clear-style{
+  border:none;
+  border-radius: 100px;
+  background-color:rgb(58, 57, 57);
+  color: white;
+  font-size: 25px;
+  width:60px;
+  height:60px;
+  margin-right:5px;
+  cursor: pointer;
+}
+.button-operators-style{
+  background-color: orange;
+}
+.button-clear-style{
+  font-size: 17px;
+}
+.calculation-display{
+  color:white;
+  font-size: 45px;
+  margin-top:15px;
+  margin-bottom: 10px;
+}
