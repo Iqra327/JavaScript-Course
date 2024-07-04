@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+  <script>
+    function findIndex(array, word){
+      for(let i = 0; i<array.length; i++){
+        const arrayInd = array[i];
+        if(arrayInd === word){
+          return i;
+        }
+      }
+      return -1;
+    }
+    findIndex(['green', 'red', 'blue', 'red'], 'red');
+    findIndex(['green', 'green', 'blue', 'red'], 'yellow');
+
+    function unique(array){
+      const newArray = [];
+      for(let i = 0; i<array.length; i++){
+        const word = array[i];
+        if(findIndex(newArray, word) === -1){
+          newArray.push(word);
+        }
+      }
+      return newArray;
+    }
+
+    console.log(unique(['green', 'red', 'blue', 'red']));
+    console.log(unique(['green', 'green', 'blue', 'red']));
+
+    
+  </script>
+  
+</body>
+</html>
