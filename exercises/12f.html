@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+ <button class="js-button" onclick="display();">Add to cart</button>
+ <p class="js-text"></p>
+
+  <script>
+    let timeId ;
+    function display(){
+        const textElement = document.querySelector('.js-text');
+        textElement.innerHTML = 'Added!';
+
+        clearTimeout(timeId);
+
+       
+
+        timeId = setTimeout(function(){
+          textElement.innerHTML = '';
+        }, 2000);
+      }
+    
+   
+  </script>
+</body>
+</html>
+
+
+
