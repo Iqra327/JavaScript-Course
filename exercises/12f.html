@@ -2,23 +2,23 @@
 <html lang="en">
 <head></head>
 <body>
- <button class="js-button" onclick="display();">Add to cart</button>
+ <button class="js-button" >Add to cart</button>
  <p class="js-text"></p>
 
   <script>
     let timeId ;
-    function display(){
         const textElement = document.querySelector('.js-text');
-        textElement.innerHTML = 'Added!';
+        const button = document.querySelector('.js-button');
+        button.addEventListener('click', () => {
+          textElement.innerHTML = 'Added!';
 
-        clearTimeout(timeId);
+          clearTimeout(timeId);
 
-       
-
-        timeId = setTimeout(function(){
+          timeId = setTimeout(() =>{
           textElement.innerHTML = '';
         }, 2000);
-      }
+        })
+        
     
    
   </script>

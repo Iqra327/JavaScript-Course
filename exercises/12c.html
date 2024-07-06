@@ -2,17 +2,19 @@
 <html lang="en">
 <head></head>
 <body>
-  <button onclick="buttonClick();" class="button-changed">
+  <button class="button-changed">
     Start
   </button>
   <script>
-    function buttonClick(){
-      const button = document.querySelector('.button-changed');
 
-      setTimeout(function(){
+  
+      const button = document.querySelector('.button-changed');
+      button.addEventListener('click',() => {
+        setTimeout(() => {
         button.innerHTML = 'Finished!';
-      }, 1000);
-    }
+      }, 1000)
+      })
+  
     
     
     
