@@ -156,6 +156,6 @@ document.querySelectorAll('.js-delete-link')
       const quantityLabel = document.querySelector(`.js-quantity-label-${productId}`);
       quantityLabel.innerHTML = newQuantity;
 
-      updateCartQuantity();
+      updateCartQuantity();     
     })
   })
