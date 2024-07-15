@@ -9,28 +9,23 @@
 
   <script type="module">
     import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
-
-
-    function isWeekend(date){
-      const dayOfWeek = date.format('dddd');
-      return dayOfWeek === 'Saturday' || dayOfWeek === 'Sunday';
-    }
+    import isSatSun from './15g.js';
 
     let date = dayjs();
     console.log(date.format('dddd, MMMM D'));
-    console.log(isWeekend(date));
+    console.log(isSatSun(date));
 
     date = dayjs().add(2, 'day');
     console.log(date.format('dddd, MMMM D'));
-    console.log(isWeekend(date));
+    console.log(isSatSun(date));
 
     date = dayjs().add(4, 'day');
     console.log(date.format('dddd, MMMM D'));
-    console.log(isWeekend(date));
+    console.log(isSatSun(date));
 
     date = dayjs().add(5, 'day');
     console.log(date.format('dddd, MMMM D'));
-    console.log(isWeekend(date));
+    console.log(isSatSun(date));
   </script>
 </body>
 </html>
